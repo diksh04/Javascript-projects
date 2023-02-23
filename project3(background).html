@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Switcher</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0px auto;
+        }
+        p{
+            font-size: 18px;
+            text-align: justify;
+        }
+        .btn{
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            border: solid grey 2px ;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #white{
+            background-color: white;
+        }
+        #aqua{
+            background-color: aqua;
+        }
+        #violet{
+            background-color: violet;
+        }
+        #black{
+            background-color: black;
+        }
+        #color-switcher{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBg('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBg('#7fffd4')"></span>
+        <span class="btn" id="violet" onclick="changeBg('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBg('#000000')"></span>
+    </div>
+    <h1 class="text">About us</h1>
+    <img src="https://st2.depositphotos.com/3591429/10566/i/600/depositphotos_105666254-stock-photo-business-people-at-meeting-and.jpg" alt="">
+    <p class="text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quas porro adipisci aperiam. Asperiores distinctio labore non, excepturi delectus sunt laborum, alias, esse voluptatum deleniti ea? Veniam minus quae aperiam incidunt nulla voluptatum, quod vero eius aspernatur tempora repellendus possimus suscipit. Eos id laboriosam labore et! Omnis ea quaerat culpa. Temporibus reiciendis ex repellendus ducimus exercitationem asperiores, assumenda, eos officia laborum inventore sapiente voluptates fuga nisi aut natus perferendis in facere nulla iusto voluptatum rerum neque vitae culpa. Numquam, quis? Cumque, quasi repellendus veniam sapiente architecto perspiciatis impedit earum, nam eum minus dicta, voluptate aut quas repellat exercitationem iure? Incidunt rem at corporis iure? Explicabo excepturi amet aliquam eligendi ad? Velit inventore recusandae necessitatibus dicta? Ratione aperiam sit dolores eveniet sapiente, voluptatum qui quibusdam quis consectetur necessitatibus unde libero similique in reprehenderit nam quo dicta sint, assumenda voluptate. Dolores sed pariatur delectus reiciendis alias perspiciatis, in ab at expedita iste labore ducimus placeat, aliquam veritatis distinctio odio dolor fugiat suscipit modi quibusdam minus, dolorum est. Ex ullam deleniti officia iusto error nobis odio in accusamus repellendus assumenda expedita deserunt blanditiis corrupti tenetur saepe voluptatum, quis ut, rem consequuntur temporibus aperiam, quaerat debitis eius enim! Dolor labore ut repudiandae vitae numquam dolore voluptatibus, rerum, repellat voluptatem magni quis voluptates fugit praesentium officia nesciunt quia non delectus magnam rem cumque omnis ab molestias. Nulla ipsam modi doloremque dolore consequuntur minima culpa quaerat ipsum voluptatem, eius, nihil aliquam non incidunt. Cumque rerum explicabo odit voluptatem odio quos adipisci autem, sequi facere recusandae qui a dolore consectetur sint, labore perferendis ab distinctio non corrupti inventore iste! In doloribus minus error, ipsa praesentium, quod nulla aspernatur nemo perspiciatis deserunt delectus perferendis fuga! Vel aspernatur, sunt ab explicabo quidem nulla odio excepturi ea repellat perspiciatis nam necessitatibus voluptatibus sit doloremque molestias nostrum numquam assumenda illo itaque. Tenetur delectus excepturi atque culpa quos inventore voluptates quisquam at similique? Similique voluptas fugiat quod. Autem perspiciatis illum est consequatur obcaecati provident at vero! Omnis cumque maxime obcaecati, adipisci illo ipsum autem accusantium reiciendis numquam aspernatur rerum, iusto sapiente dolore repellat, sunt nam iste! Et ipsum aut, quos excepturi sed consectetur, maxime iste exercitationem pariatur dolore odio optio. Nam, sequi quidem. Excepturi quod corrupti ea aut consectetur incidunt maxime? Soluta non, veniam consequatur veritatis dolorum, ducimus voluptatum necessitatibus aperiam ipsa magni sit! Laborum nisi, natus cumque in pariatur ullam omnis nam distinctio provident sit rem amet repellat tempora magni placeat voluptatibus aperiam corrupti corporis quis voluptates? Alias at minus aliquid inventore, nostrum beatae quam facilis voluptas vitae natus eligendi, nisi vero nihil officia, fugit enim voluptatum esse amet consequatur. Velit nobis iure totam ab similique itaque ratione in minima nihil? Alias enim placeat ullam ut voluptatum, ducimus consequatur nesciunt voluptatem libero corporis architecto quasi inventore officia perferendis quam veniam magnam mollitia quas quaerat illo minima debitis doloremque aspernatur! Ipsa, ex! Animi molestias maxime corrupti atque, aspernatur voluptatibus, vitae nobis maiores laudantium sapiente delectus facilis cupiditate laborum dolor quae iste hic esse aliquam. Facilis, cumque. Autem alias similique reprehenderit optio modi?
+    </p>
+
+    <script>
+        function changeBg(color)
+        {
+            document.body.style.backgroundColor=color;
+            let txt=document.getElementsByClassName("text");
+            if(color == "#000000")
+            {
+                for(let elm of txt)
+                {
+                    elm.style.color="white";
+                }
+            }
+            else
+            {
+                for(let elm of txt)
+                {
+                    elm.style.color="black";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
